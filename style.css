@@ -1,0 +1,95 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 10px;
+    z-index: 1000; /* To make sure the header stays on top */
+    text-align: center;
+}
+
+/* Main content area */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px; /* To prevent overlap with the fixed header */
+    padding: 20px;
+}
+
+/* Main Content (article) styling */
+article {
+    width: 60%;
+    background-color: #E0E0E0;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Sidebar (aside) styling */
+aside {
+    width: 30%;
+    background-color: #D0D0D0;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #C0C0C0;
+    padding: 10px;
+    text-align: center;
+    z-index: 500; /* Lower than header */
+}
+
+/* Sticky Navigation Bar (Challenge 1) */
+nav {
+    position: sticky;
+    top: 60px; /* Adjusted so it sticks just below the fixed header */
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    z-index: 900; /* Ensure it's below the header but on top of content */
+}
+
+/* Links in the Navigation Bar */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar list styling */
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    margin: 10px 0;
+}
+
+aside a {
+    color: black;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
